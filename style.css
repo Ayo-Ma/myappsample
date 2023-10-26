@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+Body{
+    background:radial-gradient(#ffffff,#cfcfcf);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    width: auto;
+    background-position: top ;
+    font-size: 16px;
+    color: White;
+}
+.Header{
+    width: 100%;
+    padding: 1em;
+}
+.parent-menu{
+    display: flex;
+    justify-content: space-between;
+   margin: 1em;
+   align-items: center;
+}
+.Logo-contain{
+    width: 100%;
+    margin-left: 2em;
+}
+.Logo{
+    color: rgb(0, 0, 90);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    width: 100%;
+   justify-content: center;
+    margin-right: 2.5em;
+    padding-top: 20px;
+}
+
+.menu>li{
+    list-style-type: none;
+    padding-left: 2em;
+}
+
+.menu>li>a{
+    text-decoration: none;
+    color: rgb(0, 0, 90);
+    transition: color 0.3s ease-in ;
+    font-weight: 500;
+}
+
+.menu>li>a:hover{
+color: rgb(0, 0, 224);
+}
+
+
+.container{
+    padding:1rem 1rem 0 1rem ;
+}
+
+.main{
+max-width: 100%;
+margin: 3rem 3rem 0 3rem;
+color: black;
+}
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background:linear-gradient(#0000ffa9,#00005a,#000033) ;
+    border-radius: 50%;
+    margin-right: 50px;
+    position: relative;
+    animation:bounce 1s 1;
+    
+}
+.text-1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #444444;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.text-1:hover{
+    color: #202020;;
+}
+.text-2{
+    font-size: calc(2.5rem*2);
+    color: #00005a;
+    position: absolute;
+    right: 6rem;
+    bottom: 8rem;
+    
+}
+.button-pa{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15em;
+}
+.Shop{
+    color: White;
+    background:linear-gradient(135deg,#3F51B5,#002984) ;
+    border: none;
+    outline:none;
+    padding: 16px 40px 16px  40px;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+   
+animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+.animate{
+    animation:bounce 4s 1;
+}
+@keyframes bounce{
+    0%{
+        transform:translateX(-100%);
+    }
+
+    50%{
+        transform:translateX(0%)
+    }
+
+    100%{
+        transform:translateX(0%);
+    }
+}
